@@ -34,3 +34,4 @@ Route::get('/link', function () {
 Route::get('/validasi', function () {
 	return view('validasi');
 });
+Route::get('perkalian', 'DosenController@index');
