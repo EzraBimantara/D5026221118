@@ -15,6 +15,6 @@
         Alamat : {{ $alamat }} -
         Umur : {{ $umur }}
     </p>
-    <a href="/pegawai/{{ date('D M Y') }}"></a>
+    <a href="/pegawai/{{ date('D M Y') }}"> Klik disini </a>
 </body>
 </html>

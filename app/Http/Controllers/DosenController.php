@@ -19,10 +19,10 @@ public function showBlog(){
     $nama = "Budi";
     $alamat = "Surabaya";
     $umur=19;
-    return view('blog', ['nama'== $nama, 'alamat' == $alamat,'umur'== $umur]);
+    return view('blog', ['nama'=> $nama, 'alamat' => $alamat,'umur'=> $umur]);
 }
-public function shownama($nama){
-    return "Anda telah mengisi " .$nama;
+public function shownama($name){
+    return "Anda telah mengisi " .$name;
 }
 public function formulir(){
     return view('formulir');
