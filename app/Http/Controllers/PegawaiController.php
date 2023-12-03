@@ -86,4 +86,12 @@ public function cari(Request $request)
 		return view('index',['pegawai' => $pegawai]);
  
 	}
+	public function view($id){
+        // mengambil data dari table pegawai sesuai id
+        $pegawai = DB::table('pegawai')
+        ->where('pegawai_id', $id)
+        ->get();
+
+        return view('view', ['pegawai' => $pegawai]);
+    }
 }
