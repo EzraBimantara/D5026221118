@@ -59,6 +59,11 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
+//rout CRUD Latihan Pra EAS
+Route::get('/indexnilai','App\Http\Controllers\NilaiKuliahController@index');
+Route::post('/nilaikuliah/masukkan','App\Http\Controllers\NilaiKuliahController@masukkan');
+Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaiKuliahController@tambahnilai');
+
 
 Route::get('/pegawai/{name}', 'App\Http\Controllers\DosenController@shownama');
 
