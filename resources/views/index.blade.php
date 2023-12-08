@@ -30,7 +30,6 @@
 		<tr>
 			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->pegawai_jabatan }}</td>
-			<td>{{ $p->pegawai_umur }}</td>
 			@if($p->pegawai_umur > 30)
                 <td style="background-color: red; color: white;">{{ $p->pegawai_umur }}</td>
             @else

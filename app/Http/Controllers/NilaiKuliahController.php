@@ -30,7 +30,7 @@ public function tambahNilai()
 }
 // method untuk insert data ke table pegawai
 public function masukkan(Request $request)
-{	````````````																																																									`
+{
 	// insert data ke table pegawai
 	DB::table('nilaikuliah')->insert([
 		'ID' => $request->ID,

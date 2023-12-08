@@ -64,7 +64,26 @@ Route::get('/indexnilai','App\Http\Controllers\NilaiKuliahController@index');
 Route::post('/nilaikuliah/masukkan','App\Http\Controllers\NilaiKuliahController@masukkan');
 Route::get('/nilaikuliah/tambahnilai','App\Http\Controllers\NilaiKuliahController@tambahnilai');
 
+//rout CRUD Tugas Pra EAS
+Route::get('/modem', 'App\Http\Controllers\ModemController@index');
 
+Route::get('/modem/tambah','App\Http\Controllers\ModemController@tambah');
+
+Route::post('/modem/store', 'App\Http\Controllers\ModemController@store');
+
+Route::get('/modem/edit/{id}','App\Http\Controllers\ModemController@edit');
+
+Route::post('/modem/update','App\Http\Controllers\ModemController@update');
+
+Route::get('/modem/hapus/{id}','App\Http\Controllers\ModemController@hapus');
+
+Route::get('/modem/cari','App\Http\Controllers\ModemController@cari');
+
+Route::get('/modem/view/{id}','App\Http\Controllers\ModemController@view');
+
+
+
+//Terpisah
 Route::get('/pegawai/{name}', 'App\Http\Controllers\DosenController@shownama');
 
 
