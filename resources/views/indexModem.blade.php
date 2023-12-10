@@ -7,8 +7,13 @@
     <a href="/modem/tambah" class="btn btn-primary"> + Tambah Modem </a>
     <br>
 @endsection
-
 @section('konten')
+<p>Cari Merk Modem :</p>
+	<form action="/modem/cari" method="GET">
+		<input class="form-control" type="text" name="cari" placeholder="Cari nama " value="{{ old('cari') }}">
+		<br/>
+		<input type="submit" value="CARI" class="btn btn-primary">
+	</form>
     <br>
     <table class="table table-striped table-hover">
         <tr>
@@ -46,4 +51,5 @@
             </tr>
         @endforeach
     </table>
+    {{ $modem->links() }}
 @endsection
