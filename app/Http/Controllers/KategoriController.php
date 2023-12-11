@@ -20,8 +20,7 @@ class KategoriController extends Controller
 
     public function pilih(Request $request)
     {
-        
-        $selectedKategoriId = $request->input('kategori');
+         $selectedKategoriId = $request->input('kategori');
 
 
         
