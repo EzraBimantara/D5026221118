@@ -1,22 +1,12 @@
-@extends('master2')
+@extends('master')
 
-@section('title', 'Detail Kategori')
-
-@section('judul_halaman')
-    <h2>Detail Kategori</h2>
-    
-    <br>  
-@endsection
+@section('title', 'Konfirmasi Kategori')
 
 @section('konten')
-
-@if($kategori)
-   <p>Anda telah memilih kategori dengan kode {{ $kategori->id }}</p> 
-@endif
-
-    <div>  
-        <a href="/kategori">Kembali</a>
+<div class="container mt-4">
+    <div class="alert alert-info" role="alert">
+        Anda telah memilih Kategori dengan Kode: {{ $selectedKategoriId }}
     </div>
-
+</div>
 @endsection
 

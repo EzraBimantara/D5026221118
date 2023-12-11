@@ -1,26 +1,20 @@
-@extends('master2')
+@extends('master')
 
-@section('title', 'Pilihan Kategori')
-
-@section('judul_halaman')
-    <h2>Kategori</h2>
-
-    <br>
-@endsection
+@section('title', 'DATABASE KATEGORI')
 
 @section('konten')
-    <form method="GET" action="/kategori/show/{id}">
-        @csrf
-        <select name="id"> 
-            @foreach($kategori as $k)
-
-    <option value="{{ $k->id }}">{{ $k->Nama }}</option>
-
-@endforeach
-
-</select>
-
-        <button type="submit">Submit</button>
-    </form>
+<form action="/kategori/pilih" method="POST">
+    @csrf 
+    <div class="form-group">
+        <label for="kategori">Pilih Kategori</label>
+        <select name="kategori" id="kategori" class="form-control">
+            @foreach($kategori as $kat)
+                <option value="{{ $kat->id }}">{{ $kat->Nama }}</option>
+            @endforeach
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">KIRIM</button>
+</form>
 @endsection
+
 
