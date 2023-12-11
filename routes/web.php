@@ -81,7 +81,9 @@ Route::get('/modem/cari','App\Http\Controllers\ModemController@cari');
 
 Route::get('/modem/view/{id}','App\Http\Controllers\ModemController@view');
 
-
+//Route EAS
+Route::get('/kategori', 'App\Http\Controllers\KategoriController@index');
+Route::get('/kategori/show/{id}', 'App\Http\Controllers\KategoriController@show');
 
 //Terpisah
 Route::get('/pegawai/{name}', 'App\Http\Controllers\DosenController@shownama');
